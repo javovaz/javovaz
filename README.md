@@ -1,16 +1,16 @@
-### Hi there 👋
+# Hello! I'm Javo Vaz 👋
 
-<!--
-**javovaz/javovaz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- <img src="https://javovaz.com.ar/wp-content/uploads/2021/01/cropped-firma.png" style="max-width:100%;"/> -->
 
-Here are some ideas to get you started:
+Human being based in Mar del Plata ARG.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+❤️ I love to write code.
+
+💻 On my way to becoming a full stack developer.
+
+My intention is to specialize in **MERN**. But first... i must **LEARN**.
+
+## If you have any question please contact me.
+
+### ⚡ LinkedIn: https://linkedin.com/in/javovaz/
+### ⚡ Twitter: https://twitter.com/javovaz/
