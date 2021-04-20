@@ -2,18 +2,18 @@
 
 <!-- <img src="https://javovaz.com.ar/wp-content/uploads/2021/01/cropped-firma.png" style="max-width:100%;"/> -->
 
-Human being based in Mar del Plata ARG.
+## Frontend Developer on my way to Backend.
 
-❤️ I love to write code.
+### ❤️ I love to write code.
 
 💻 On my way to becoming a full stack developer.
 
 My intention is to specialize in **MERN**. But first... i must **LEARN**.
 
-## If you have any question please contact me.
+### If you have any question please contact me.
 
-### ⚡ LinkedIn: https://linkedin.com/in/javovaz/
+⚡ LinkedIn: https://linkedin.com/in/javovaz/
 
-### ⚡ Twitter: https://twitter.com/javovaz/
+⚡ Twitter: https://twitter.com/javovaz/
 
-### ⚡ Twitter: https://codepen.io/javovaz/
+⚡ Twitter: https://codepen.io/javovaz/
