@@ -1,17 +1,15 @@
-# Hello! I'm Javo Vaz 👋
+# Hello! I am Javo #JuniorDev frontend 💻👋 \
 
-<!-- <img src="https://javovaz.com.ar/wp-content/uploads/2021/01/cropped-firma.png" style="max-width:100%;"/> -->
+## I am searching for my first #DevJob ⚡ \ 
 
-## 💻 Front-end Developer on my way to Backend.
+### I love graphic and UX/UI design 💼 \
 
-### ❤️ I love to write code.
-
-My intention is to specialize in **MERN**. But first... i must **LEARN**.
-
-### If you have any question please contact me.
+### Would you follow me in this path? 🤓🎉 \
 
 ⚡ LinkedIn: https://linkedin.com/in/javovaz/
 
 ⚡ Twitter: https://twitter.com/javovaz/
 
-⚡ Twitter: https://codepen.io/javovaz/
+⚡ Codepen: https://codepen.io/javovaz/
+
+⚡ Vercel: https://vercel.com/javovaz/
