@@ -1,6 +1,4 @@
-# Hello! I am Javo #JuniorDev frontend 💻👋 \
-
-## I am searching for my first #DevJob ⚡ \ 
+# Hello! I am Javo #Frontend Developer 💻👋 \
 
 ### I love graphic and UX/UI design 💼 \
 
