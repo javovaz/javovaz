@@ -1,13 +1,9 @@
-# Hello! I am Javo #Frontend Developer 💻👋 \
+# Hello! 👋🏻 I am Javo
 
-### I love graphic and UX/UI design 💼 \
-
-### Would you follow me in this path? 🤓🎉 \
+## Frontend Developer - UX/UI designer 💼
 
 ⚡ LinkedIn: https://linkedin.com/in/javovaz/
 
 ⚡ Twitter: https://twitter.com/javovaz/
 
-⚡ Codepen: https://codepen.io/javovaz/
-
-⚡ Vercel: https://vercel.com/javovaz/
+⚡ Codepen: https://javovaz.com.ar/
