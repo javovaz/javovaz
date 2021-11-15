@@ -1,9 +1,7 @@
-# Hello! 👋🏻 I am Javo
+# Hola! 👋🏻 Soy Javo
 
-## Frontend Developer - UX/UI designer 💼
+## Frontend Developer 💼
 
 ⚡ LinkedIn: https://linkedin.com/in/javovaz/
 
 ⚡ Twitter: https://twitter.com/javovaz/
-
-⚡ Codepen: https://javovaz.com.ar/
