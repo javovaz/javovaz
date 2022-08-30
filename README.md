@@ -1,6 +1,8 @@
-# Hola! 👋🏻 Soy Javo
+# Hola! 👋🏻 Soy Gustavo Vaz
 
 ## Frontend Developer 💼
+
+## UX/UI Designer 💼
 
 ### Contacto
 
