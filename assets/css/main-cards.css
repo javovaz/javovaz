@@ -1,0 +1,205 @@
+.JVVZ__main-cards {
+  margin: auto;
+}
+
+.JVVZ__main-cards .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 35px;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+
+
+  .JVVZ__main-cards .grid {
+    padding: 60px 35px;
+  }
+}
+
+.JVVZ__main-cards .card {
+  border-radius: 35px;
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.JVVZ__main-cards .card-top {
+  position: relative;
+  background-color: var(--accentComplimentary);
+  padding: 35px 35px 70px 35px;
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.JVVZ__main-cards .card-top .custom-button {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.3rem;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.JVVZ__main-cards .card-top .custom-button:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 1.37);
+}
+
+.JVVZ__main-cards .card-top:has(.card-figure) {
+  aspect-ratio: 3/2;
+}
+
+.JVVZ__main-cards .card-bottom {
+  position: relative;
+  margin-top: -35px;
+  /*background-image: url(../images/texture.webp);*/
+  background-blend-mode: luminosity;
+  background-position: bottom;
+  background-color: var(--accent);
+  padding: 35px;
+  border-radius: 35px;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.JVVZ__main-cards .card-bottom img {
+  opacity: 0.5;
+}
+
+.JVVZ__main-cards .card-figure {
+  mix-blend-mode: luminosity;
+  opacity: 0.5;
+}
+
+.JVVZ__main-cards .card-image {
+  width: -webkit-fill-available;
+  position: absolute;
+  top: -4rem;
+  left: 0;
+}
+
+.JVVZ__main-cards .card-tag {
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  border-radius: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.JVVZ__main-cards .card-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  letter-spacing: 0.05rem;
+  margin: 0 0 -50px 0;
+}
+
+.JVVZ__main-cards .card-position {
+  font-weight: 600;
+  font-size: var(--font-size-small);
+  margin: 0 0 -50px 0;
+}
+
+.JVVZ__main-cards .card-text {
+  font-size: var(--font-size-default);
+  font-weight: 400;
+}
+
+.JVVZ__main-cards .card-reverse {
+  flex-direction: column-reverse;
+}
+
+.JVVZ__main-cards .card-reverse .card-bottom {
+  margin-top: 0;
+  margin-bottom: -35px;
+}
+
+.JVVZ__main-cards .card-reverse .card-top {
+  position: relative;
+  padding: 70px 35px 35px 35px;
+  align-items: flex-end;
+}
+
+.JVVZ__main-cards ol, ul {
+    padding-left: 0rem;
+}
+
+.JVVZ__main-cards li.grid__item::marker {
+  content: "";
+  display: none;
+}
+
+.JVVZ__main-cards .card-accent1 {
+  --accent: #D3F9F4;
+  --accentComplimentary: #05716C;
+}
+
+.JVVZ__main-cards .card-accent2 {
+  --accent: #E8E0F7;
+  --accentComplimentary: #4A185A;
+}
+
+.JVVZ__main-cards .card-accent3 {
+  --accent: #FFF1AA;
+  --accentComplimentary: #D88511;
+}
+
+.JVVZ__main-cards .card-accent4 {
+  --accent: #FFF9DC;
+  --accentComplimentary: #A3790D;
+}
+
+.dark-mode .JVVZ__main-cards .card-accent1 {
+  --accent: #A3FFE4;
+  --accentComplimentary: #05403C;
+}
+
+.dark-mode .JVVZ__main-cards .card-accent2 {
+  --accent: #CEB6F7;
+  --accentComplimentary: #2E003E;
+}
+
+.dark-mode .JVVZ__main-cards .card-accent3 {
+  --accent: #B6DA23;
+  --accentComplimentary: #758E10;
+}
+
+.dark-mode .JVVZ__main-cards .card-accent4 {
+  --accent: #EDB91B;
+  --accentComplimentary: #5C4401;
+}
+
+.card {
+  --bs-card-bg: var(--accentComplimentary);;
+}
+
+.contact-image {
+  background-image: url('../images/contacto.webp');
+  background-color: var(--color-accent-primary);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  width: 100%;
+  aspect-ratio: 3/2; /* O el alto que prefieras */
+}
+
+.dark-mode .contact-image {
+  background-color: var(--color-accent-primary);
+}

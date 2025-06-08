@@ -1,0 +1,136 @@
+<style>
+:root {
+  --color-triadic-orange-secondary: #FFAF24;
+  --color-triadic-red-secondary: #FF4455;
+  --color-triadic-aqua-secondary: #00E0E0;
+  --font-code: 'Courier New', monospace;
+  --radius-16: 1rem;
+  --color-300: #f0f0f0;
+  --color-text-primary: #222;
+  --color-border-base: #ccc;
+}
+
+/* Estilo base */
+pre {
+  background-color: var(--color-300);
+  padding: 2rem;
+  border-radius: var(--radius-16);
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-family: var(--font-code);
+  overflow-x: auto;
+}
+
+.token-color {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--color-border-base);
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.token-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.token-color .swatch {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  border: 1px solid var(--color-border-base);
+}
+
+.token-meta {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #555;
+  margin-left: 1.7rem;
+}
+
+@media (min-width: 600px) {
+  .token-color {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .token-meta {
+    margin-left: 0;
+    text-align: right;
+  }
+}
+</style>
+
+<pre id="color-tokens">
+  <!-- Tokens generados por JS -->
+</pre>
+
+<script>
+// Tus variables color
+const colorVars = [
+  '--color-triadic-orange-secondary',
+  '--color-triadic-red-secondary',
+  '--color-triadic-aqua-secondary'
+];
+
+// Helpers
+function hexToRgb(hex) {
+  const bigint = parseInt(hex.replace('#', ''), 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return [r, g, b];
+}
+
+function rgbToHsl(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h = 0, s = 0, l = (max + min) / 2;
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
+    }
+    h /= 6;
+  }
+  return [
+    Math.round(h * 360),
+    Math.round(s * 100),
+    Math.round(l * 100)
+  ];
+}
+
+// Render
+const container = document.getElementById('color-tokens');
+
+colorVars.forEach(token => {
+  const value = getComputedStyle(document.documentElement).getPropertyValue(token).trim();
+  const [r, g, b] = hexToRgb(value);
+  const [h, s, l] = rgbToHsl(r, g, b);
+
+  const template = `
+  <div class="token-color">
+    <div class="token-label">
+      <span class="swatch" style="background-color: ${value};"></span>
+      ${token}
+    </div>
+    <div class="token-meta">
+      HEX: ${value}<br>
+      RGB: ${r}, ${g}, ${b}<br>
+      HSL: hsl(${h}, ${s}%, ${l}%)
+    </div>
+  </div>`;
+
+  container.innerHTML += template;
+});
+</script>

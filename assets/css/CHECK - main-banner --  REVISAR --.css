@@ -1,0 +1,96 @@
+
+/** NAVBAR -------------------------------------------------------------- */
+
+#toggle-mode {
+  font-size: var(--font-size-medium);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.main-banner {
+  background: var(--bg-main-banner);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main-banner .contenedor {
+  width: 80%;
+  margin: auto;
+}
+
+.main-banner .contenedor p {
+  font-size: var(--font-size-large);
+}
+
+.main-banner .contenedor h1,
+.main-banner .contenedor p {
+  filter: var(--shadow-svg-dark);
+  text-align: center;
+}
+
+.main-banner__contenedor__button {
+  margin-top: 5rem;
+}
+
+.main-banner__contenedor__button .btn {
+  font-size: var(--font-size-medium);
+  position: static;
+  display: block;
+  height: 6rem !important;
+  line-height: 5.6rem !important;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-banner__contenedor__button .btn:first-child {
+  right: 100%;
+  left: auto;
+  background-color: var(--button-primary);
+  border-color: var(--button-primary);
+  color: var(--button-primary-text);
+  width: -webkit-fill-available;
+}
+
+.main-banner__contenedor__button .btn:not(:first-child) {
+  background-color: var(--button-secondary);
+  border-color: var(--button-secondary);
+  color: var(--button-secondary-text);
+  width: -webkit-fill-available;
+}
+
+.main-banner__contenedor__button .btn:first-child:hover {
+  background-color: var(--button-primary-hover);
+  border-color: var(--button-primary-hover);
+  color: var(--button-primary-text-hover);
+}
+
+.main-banner__contenedor__button .btn:not(:first-child):hover,
+.main-banner__contenedor__button .btn:not(:first-child):focus {
+  background-color: var(--button-secondary-hover);
+  border-color: var(--button-secondary-hover);
+  color: var(--button-secondary-text-hover);
+}
+
+.main-banner-scroll {
+  width: 3rem;
+  float: right;
+  margin: 1.6rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .main-banner .contenedor p {
+    font-size: var(--font-size-large);
+  }
+
+  .main-banner__contenedor__button .btn:first-child,
+  .main-banner__contenedor__button .btn:not(.btn--primary) {
+    right: 50%;
+    left: auto;
+  }
+}
