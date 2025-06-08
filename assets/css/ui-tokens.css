@@ -1,0 +1,231 @@
+:root {
+
+  /** ⚙️ ESTILOS GLOBALES START */
+
+  /* ─────🎯 Tipografías ───── */
+  --font-primary: "Unbounded", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --font-alt: "Quicksand", sans-serif;
+  --font-code: "Noto Sans Mono", monospace;
+
+  /* ─────🔠 Tamaños de Fuente ───── */
+  --font-size-xsmall: .8rem;
+  --font-size-small: 1.2rem;
+  --font-size-default: 1.6rem;
+  --font-size-medium: 2.0rem;    
+  --font-size-large: 2.4rem;    
+  --font-size-xl: 3.2rem;    
+  --font-size-xxl: 4rem;    
+  --font-size-xxxl: 4.8rem;     
+  --font-size-oversize: 8rem;
+  --font-size-huge: 16rem;   
+
+  --font-size-text-reveal: var(--font-size-xl);  
+  --font-size-h1: var(--font-size-xl);
+  --font-size-h2: var(--font-size-large);
+  --font-size-h3: var(--font-size-default);
+  --font-size-hs-secondarys: var(--font-size-small);
+
+
+  /* ─────⏱️ Transiciones ───── */
+  --transition-default: 0.1s ease-in-out;
+  --transition-icon: all 0.2s ease-in-out;
+
+  /* ─────🕶️ Sombras ───── */
+  --shadow-navbar: 0rem 0.4rem 1.6rem 0rem rgba(0, 0, 0, 0.44);
+  --shadow-navbar-dropdown: 0rem 0.6rem 2.4rem 0rem rgba(69, 19, 93, 0.09),
+    0rem 0rem 0rem 0.1rem rgba(0, 0, 0, 0.08);
+  --shadow-footer: 0 0.8rem 2.2rem 0 rgba(31, 38, 135, 0.3);
+  --shadow-light: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+  --shadow-svg-light: drop-shadow(0rem 0rem 0.8rem rgba(0, 0, 0, 0.3));
+  --shadow-svg-dark: drop-shadow(0rem 0rem 1.6rem rgba(0, 0, 0, 0.7));
+  --shadow-pre-code: 0 0 20px rgba(0, 0, 0, 0.4);
+
+  /* ─────🫥 Opacidades ───── */
+  --opacity-10: 1;
+  --opacity-09: 0.9;
+  --opacity-08: 0.8;
+  --opacity-07: 0.7;
+  --opacity-06: 0.6;
+  --opacity-05: 0.5;
+  --opacity-04: 0.4;
+  --opacity-03: 0.3;
+  --opacity-02: 0.2;
+  --opacity-01: 0.1;
+
+/** BORDER-RADIUS */
+
+  --radius-08: 0.8rem;
+  --radius-16: 1.6rem;
+  --radius-24: 2.4rem;
+  --radius-32: 3.2rem;
+  --radius-40: 4rem;
+
+  /* ─────🧊 Efectos Visuales ───── */
+  --filter-glass: blur(1.05rem);
+
+  /** ⚙️ ESTILOS GLOBALES ENDS */
+
+
+  /** 🎨 PALETA TRIÁDICA START */
+
+  /* 💧 Aqua */
+  --color-triadic-aqua-primary: #01E9AF;
+  --color-triadic-aqua-secondary: #389690;
+  --color-triadic-aqua-alt: #57C6D2;
+
+  /* 🍋 Lemon */
+  --color-triadic-lemon-primary: #DAFF45;
+  --color-triadic-lemon-secondary: #B6DA23;
+  --color-triadic-lemon-alt: #758E10;
+
+  /* 🫐 Purple */
+  --color-triadic-purple-primary: #68009A;
+  --color-triadic-purple-secondary: #4D2372;
+  --color-triadic-purple-alt: #45135D;
+
+  /* 🍫 Brown */
+  --color-triadic-brown-primary: #9C4863;
+  --color-triadic-brown-secondary: #532E3A;
+  --color-triadic-brown-alt: #441A28;
+
+  /* 🍊 Orange */
+  --color-triadic-orange-primary: #FED766;
+  --color-triadic-orange-secondary: #FFAF24;
+  --color-triadic-orange-alt: #FF8501;
+
+  /* 🍎 Red */
+  --color-triadic-red-primary: #FF5100;
+  --color-triadic-red-secondary: #ED4F4D;
+  --color-triadic-red-alt: #800006;
+
+  /* 🎱 Dark */
+  --color-triadic-dark-primary: #352F40;
+  --color-triadic-dark-secondary: #1E1E1E;
+  --color-triadic-dark-alt: #7A7485;
+
+  --color-text-light: #EBEBEB;
+  --color-text-dark: #1E1E1E;
+
+  /** 🎨 PALETA TRIÁDICA ENDS */
+
+
+  /** ☀️ LIGHT MODE START */
+
+  --color-accent-primary: var(--color-triadic-red-primary);
+  --color-error: var(--color-triadic-red-secondary);
+
+  /* ─────🎨 Colores de Fondo LIGHT ───── */
+  --color-100: #ffffff;
+  --color-200: #ebebeb;
+  --color-300: #d9d9d9;
+  --color-400: #ababab;
+  --color-500: #7A7485;
+  --color-600: #352F40;
+  --color-700: #1E1E1E;
+  --color-800: #000000;
+  --color-soft-sand: #e7ead6;
+
+  /* ─────🖍️ Colores de Texto LIGHT ───── */
+  --color-text-primary: #1E1E1E;
+  --color-text-secondary: #d9d9d9;
+  --color-text-reverse: #ebebeb;
+
+  /* ─────📑 Navbar LIGHT ───── */
+  --navbar-text: #1E1E1E;
+  --navbar-bg: #ebebeb;
+  --navbar-border: #d9d9d9;
+  --navbar-icon-bg: #d9d9d9;
+  --navbar-dropdown-bg: var(--color-200);
+  --navbar-dropdown-text: #7A7485;
+
+  /* ─────🔗 Links LIGHT ───── */
+  --link-primary: #1E1E1E;
+  --link-primary-hover: var(--color-accent-primary);
+  --link-secondary: #ED4F4D;
+  --link-secondary-hover: #D88511;
+  --link-alt: #4D2372;
+  --link-alt-hover: #68009a;
+
+  /* ─────🔘 Botones LIGHT ───── */
+  --button-primary: #01E9AF;
+  --button-primary-hover: #352F40;
+  --button-primary-text: #352F40;
+  --button-primary-text-hover: #01E9AF;
+
+  --button-secondary: #45135D;
+  --button-secondary-hover: #4D2372;
+  --button-secondary-text: #DAFF45;
+  --button-secondary-text-hover: #B6DA23;
+
+  /* ─────🖼️ Imágenes LIGHT ───── */
+  --color-bg-body: var(--color-200);
+  --bg-main-banner: url(../images/banner-dt-light.svg);
+
+  /** ☀️ LIGHT MODE ENDS */
+
+}
+
+/** 🌙 DARK MODE START */
+
+.dark-mode {
+
+  --shadow-pre-code: 0 0 20px rgba(255, 255, 255, 0.2);
+  --color-accent-primary: #B6DA23;
+
+  /* ─────🎨 Colores de Fondo DARK ───── */
+  --color-100: #000000;
+  --color-200: #1E1E1E;
+  --color-300: #352F40;
+  --color-400: #7A7485;
+  --color-500: #ABABAB;
+  --color-600: #D9D9D9;
+  --color-700: #EBEBEB;
+  --color-800: #FFFFFF;
+  --color-soft-sand: #E7EAD6;
+
+  /* ─────🖍️ Colores de Texto DARK ───── */
+  --color-text-primary: #ebebeb;
+  --color-text-secondary: #d9d9d9;
+  --color-text-reverse: #1E1E1E;
+
+  /* ─────📑 Navbar DARK ───── */
+  --navbar-text: #ebebeb;
+  --navbar-bg: var(--color-200);
+  --navbar-dropdown-text: #ABABAB;
+  --navbar-icon-bg: #ababab26;
+  --navbar-border: #e7ead6;
+  --navbar-dropdown-bg: var(--color-200);
+
+  /* ─────🔗 Links DARK ───── */
+  --link-primary: #ebebeb;
+  --link-primary-hover: var(--color-accent-primary);
+  --link-secondary: #FED766;
+  --link-secondary-hover: #EDB91B;
+  --link-alt: #B6DA23;
+  --link-alt-hover: #758E10;
+
+  /* ─────🔘 Botones DARK ───── */
+  --button-primary: #01E9AF;
+  --button-primary-hover: #352F40;
+  --button-primary-text: #1E1E1E;
+  --button-primary-text-hover: #DAFF45;
+
+  --button-secondary: #441A28;
+  --button-secondary-hover: #532E3A;
+  --button-secondary-text: #EDB91B;
+  --button-secondary-text-hover: #D88511;
+
+  /* ─────🖼️ Imágenes DARK ───── */
+  --color-bg-body: var(--color-200);
+
+}
+
+/** 🌙 DARK MODE ENDS */
+
+@media (min-width: 600px) {
+  :root {
+    --font-size-h1: 4rem;
+    }
+}

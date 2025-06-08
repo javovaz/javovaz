@@ -1,0 +1,25 @@
+::selection,
+::-moz-selection {
+  background: var(--color-triadic-purple-secondary);
+  color: var(--color-triadic-lemon-alt);
+}
+
+svg {
+  max-width: none;
+  height: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* Scroll oculto - mantener comentado */
+/*
+body ::-webkit-scrollbar,
+body::-webkit-scrollbar {display: none;}
+body {-ms-overflow-style: none;}
+html {scrollbar-width: none;}
+*/
+
+/** DEBUGGIN STYLE 
+* {
+  outline: 1px solid red;
+}*/

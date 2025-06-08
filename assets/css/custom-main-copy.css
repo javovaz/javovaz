@@ -1,0 +1,41 @@
+.main-copy {
+  width: 80vw;
+  margin: 0 auto;
+  color: var(--font-primary);
+}
+
+.main-copy h1 {
+  font-size: var(--font-size-h1);
+  line-height: 4rem;
+  letter-spacing: 0.07rem;
+}
+
+.main-copy p {
+  font-size: var(--font-size-default);
+}
+
+@media (min-width: 600px) {
+.main-copy h1 {
+  font-size: var(--font-size-h1);
+  line-height: 5rem;
+  letter-spacing: 0.07rem;
+}
+}
+
+.main-copy .emoji {
+  width: 4rem;
+  height: auto;
+  margin: 0 0 0 1rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .main-copy .emoji {
+    width: 8rem;
+    height: auto;
+    margin: 0 0 0 2rem;
+    position: relative;
+    bottom: 1rem;
+  }
+}
