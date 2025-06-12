@@ -226,7 +226,7 @@
 /** CUSTOM BUTTONS **/
 
 .JVVZ__custom-btn.btn {
-  color: var(--color-text-primary);
+  color: var(--color-text-reverse);
   background-color: var(--color-accent-primary);
   border: none;
   padding: 0.6rem 1.4rem;
@@ -238,7 +238,8 @@
 
 .JVVZ__custom-btn.btn:hover {
   color: var(--color-accent-primary);
-  background-color: var(--color-text-primary);
+  background-color: var(--color-text-reverse);
+  box-shadow: var(--shadow-light);
 }
 
 /*
