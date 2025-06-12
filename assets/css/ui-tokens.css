@@ -26,7 +26,6 @@
   --font-size-h3: var(--font-size-default);
   --font-size-hs-secondarys: var(--font-size-small);
 
-
   /* ─────⏱️ Transiciones ───── */
   --transition-default: 0.1s ease-in-out;
   --transition-icon: all 0.2s ease-in-out;
@@ -101,12 +100,12 @@
   --color-triadic-red-alt: #800006;
 
   /* 🎱 Dark */
-  --color-triadic-dark-primary: #352F40;
-  --color-triadic-dark-secondary: #1E1E1E;
-  --color-triadic-dark-alt: #7A7485;
+  --color-triadic-dark-primary: var(--color-600);
+  --color-triadic-dark-secondary: var(--color-700);
+  --color-triadic-dark-alt: var(--color-500);
 
-  --color-text-light: #EBEBEB;
-  --color-text-dark: #1E1E1E;
+  --color-text-light: var(--color-200);
+  --color-text-dark: var(--color-700);
 
   /** 🎨 PALETA TRIÁDICA ENDS */
 
@@ -117,47 +116,47 @@
   --color-error: var(--color-triadic-red-secondary);
 
   /* ─────🎨 Colores de Fondo LIGHT ───── */
-  --color-100: #ffffff;
-  --color-200: #ebebeb;
-  --color-300: #d9d9d9;
-  --color-400: #ababab;
+  --color-100: #FFFFFF;
+  --color-200: #EBEBEB;
+  --color-300: #D9D9D9;
+  --color-400: #ABABAB;
   --color-500: #7A7485;
   --color-600: #352F40;
   --color-700: #1E1E1E;
   --color-800: #000000;
-  --color-soft-sand: #e7ead6;
+  --color-soft-sand: #E7EAD6;
 
   /* ─────🖍️ Colores de Texto LIGHT ───── */
-  --color-text-primary: #1E1E1E;
-  --color-text-secondary: #d9d9d9;
-  --color-text-reverse: #ebebeb;
+  --color-text-primary: var(--color-700);
+  --color-text-secondary: var(--color-300);
+  --color-text-reverse: var(--color-200);
 
   /* ─────📑 Navbar LIGHT ───── */
-  --navbar-text: #1E1E1E;
-  --navbar-bg: #ebebeb;
-  --navbar-border: #d9d9d9;
-  --navbar-icon-bg: #d9d9d9;
+  --navbar-text: var(--color-700);
+  --navbar-bg: var(--color-200);
+  --navbar-border: var(--color-300);
+  --navbar-icon-bg: var(--color-300);
   --navbar-dropdown-bg: var(--color-200);
-  --navbar-dropdown-text: #7A7485;
+  --navbar-dropdown-text: var(--color-500);
 
   /* ─────🔗 Links LIGHT ───── */
-  --link-primary: #1E1E1E;
+  --link-primary: var(--color-700);
   --link-primary-hover: var(--color-accent-primary);
-  --link-secondary: #ED4F4D;
-  --link-secondary-hover: #D88511;
-  --link-alt: #4D2372;
-  --link-alt-hover: #68009a;
+  --link-secondary: var(--color-triadic-red-secondary);
+  --link-secondary-hover: var(--color-triadic-orange-secondary);
+  --link-alt: var(--color-triadic-purple-secondary);
+  --link-alt-hover: var(--color-triadic-purple-primary);
 
   /* ─────🔘 Botones LIGHT ───── */
-  --button-primary: #01E9AF;
-  --button-primary-hover: #352F40;
-  --button-primary-text: #352F40;
-  --button-primary-text-hover: #01E9AF;
+  --button-primary: var(--color-triadic-aqua-primary);
+  --button-primary-hover: var(--color-600);
+  --button-primary-text: var(--color-600);
+  --button-primary-text-hover: var(--color-triadic-aqua-primary);
 
-  --button-secondary: #45135D;
-  --button-secondary-hover: #4D2372;
-  --button-secondary-text: #DAFF45;
-  --button-secondary-text-hover: #B6DA23;
+  --button-secondary: var(--color-triadic-purple-alt);
+  --button-secondary-hover: var(--color-triadic-purple-secondary);
+  --button-secondary-text: var(--color-triadic-lemon-primary);
+  --button-secondary-text-hover: var(--color-triadic-lemon-secondary);
 
   /* ─────🖼️ Imágenes LIGHT ───── */
   --color-bg-body: var(--color-200);
@@ -172,7 +171,7 @@
 .dark-mode {
 
   --shadow-pre-code: 0 0 20px rgba(255, 255, 255, 0.2);
-  --color-accent-primary: #B6DA23;
+  --color-accent-primary: var(--color-triadic-lemon-secondary);
 
   /* ─────🎨 Colores de Fondo DARK ───── */
   --color-100: #000000;
@@ -186,36 +185,36 @@
   --color-soft-sand: #E7EAD6;
 
   /* ─────🖍️ Colores de Texto DARK ───── */
-  --color-text-primary: #ebebeb;
-  --color-text-secondary: #d9d9d9;
-  --color-text-reverse: #1E1E1E;
+  --color-text-primary: var(--color-700);
+  --color-text-secondary: var(--color-600);
+  --color-text-reverse: var(--color-200);
 
   /* ─────📑 Navbar DARK ───── */
-  --navbar-text: #ebebeb;
+  --navbar-text: var(--color-700);
   --navbar-bg: var(--color-200);
-  --navbar-dropdown-text: #ABABAB;
-  --navbar-icon-bg: #ababab26;
-  --navbar-border: #e7ead6;
+  --navbar-dropdown-text: var(--color-500);
+  --navbar-icon-bg: var(--color-500);
+  --navbar-border: var(--color-soft-sand);
   --navbar-dropdown-bg: var(--color-200);
 
   /* ─────🔗 Links DARK ───── */
-  --link-primary: #ebebeb;
+  --link-primary: var(--color-700);
   --link-primary-hover: var(--color-accent-primary);
-  --link-secondary: #FED766;
-  --link-secondary-hover: #EDB91B;
-  --link-alt: #B6DA23;
-  --link-alt-hover: #758E10;
+  --link-secondary: var(--color-triadic-orange-primary);
+  --link-secondary-hover: var(--color-triadic-orange-secondary);
+  --link-alt: var(--color-triadic-lemon-secondary);
+  --link-alt-hover: var(--color-triadic-lemon-alt);
 
   /* ─────🔘 Botones DARK ───── */
-  --button-primary: #01E9AF;
-  --button-primary-hover: #352F40;
-  --button-primary-text: #1E1E1E;
-  --button-primary-text-hover: #DAFF45;
+  --button-primary: var(--color-triadic-aqua-primary);
+  --button-primary-hover: var(--color-300);
+  --button-primary-text: var(--color-200);;
+  --button-primary-text-hover: var(--color-triadic-lemon-primary);
 
-  --button-secondary: #441A28;
-  --button-secondary-hover: #532E3A;
-  --button-secondary-text: #EDB91B;
-  --button-secondary-text-hover: #D88511;
+  --button-secondary: var(--color-triadic-brown-alt);
+  --button-secondary-hover: var(--color-triadic-brown-secondary);
+  --button-secondary-text: var(--color-triadic-orange-secondary);
+  --button-secondary-text-hover: var(--color-triadic-orange-secondary);
 
   /* ─────🖼️ Imágenes DARK ───── */
   --color-bg-body: var(--color-200);
