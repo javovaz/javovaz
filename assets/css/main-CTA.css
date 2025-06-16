@@ -8,6 +8,7 @@
 }
 
 .JVVZ__main-CTA .h1, h1 {
+  font-size: var(--font-size-h1);
   margin: 1rem 0;
 }
 

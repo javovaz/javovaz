@@ -21,10 +21,10 @@
   --font-size-huge: 16rem;   
 
   --font-size-text-reveal: var(--font-size-xl);  
-  --font-size-h1: var(--font-size-xl);
-  --font-size-h2: var(--font-size-large);
-  --font-size-h3: var(--font-size-default);
-  --font-size-hs-secondarys: var(--font-size-small);
+  --font-size-h1: var(--font-size-xxl);
+  --font-size-h2: var(--font-size-xl);
+  --font-size-h3: var(--font-size-large);
+  --font-size-heading-sm: var(--font-size-medium); /** h4, h5, h6 **/
 
   /* ─────⏱️ Transiciones ───── */
   --transition-default: 0.1s ease-in-out;
