@@ -108,6 +108,7 @@
   font-size: var(--font-size-large);
   letter-spacing: 0.05rem;
   margin: 0 0 -50px 0;
+  line-height: normal;
 }
 
 .JVVZ__main-cards .card-position {
