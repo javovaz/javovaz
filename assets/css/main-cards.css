@@ -39,7 +39,7 @@
 
 .JVVZ__main-cards .card-top .custom-button {
   font-size: var(--font-size-small);
-  color: var(--color-text-light);
+  color: var(--color-200);
   font-weight: 500;
   text-decoration: none;
   line-height: 1.3rem;

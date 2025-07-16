@@ -484,34 +484,34 @@ pre.ui-tokens {
 }
 
 [data-token-type="font"] {
-  color: var(--color-triadic-purple-primary);
+  color: var(--color-analogous-purple-primary);
   font-family: var(--font-code);
 }
 
 [data-token-type="shadow"] {
-  color: var(--color-triadic-orange-primary);
+  color: var(--color-analogous-orange-primary);
 }
 
 [data-token-type="size"] {
-  color: var(--color-triadic-lemon-primary);
+  color: var(--color-analogous-lemon-primary);
 }
 
 .dark-mode {
 
   [data-token-type="color"] {
-    color: var(--color-triadic-aqua-primary);
+    color: var(--color-analogous-aqua-primary);
   }
 
   [data-token-type="font"] {
-    color: var(--color-triadic-purple-primary);
+    color: var(--color-analogous-purple-primary);
     font-family: var(--font-code);
   }
 
   [data-token-type="shadow"] {
-    color: var(--color-triadic-orange-primary);
+    color: var(--color-analogous-orange-primary);
   }
 
   [data-token-type="size"] {
-    color: var(--color-triadic-lemon-primary);
+    color: var(--color-analogous-lemon-primary);
   }
 }

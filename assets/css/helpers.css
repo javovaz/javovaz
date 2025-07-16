@@ -1,7 +1,7 @@
 ::selection,
 ::-moz-selection {
-  background: var(--color-triadic-purple-secondary);
-  color: var(--color-triadic-lemon-alt);
+  background: var(--color-analogous-purple-secondary);
+  color: var(--color-analogous-lemon-alt);
 }
 
 svg {
