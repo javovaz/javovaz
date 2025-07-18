@@ -275,16 +275,16 @@
 
 .svg-scroll {
   fill: none;
-  stroke: var(--color-principal-scroll);
+  stroke: var(--color-primary-scroll);
   stroke-width: 20px;
 }
 
 :root {
-  --color-principal-scroll: var(--color-accent-primary);
+  --color-primary-scroll: var(--color-accent-primary);
 }
 
 .dark-mode {
-  --color-principal-scroll: var(--color-accent-primary);
+  --color-primary-scroll: var(--color-accent-primary);
 }
 
 @keyframes scroll {
@@ -310,12 +310,12 @@ svg #wheel {
 }
 
 :root {
-  --color-principal-logo: var(--color-accent-primary);
+  --color-primary-logo: var(--color-accent-primary);
   --color-secundario-logo: #1E1E1E;
 }
 
 .dark-mode {
-  --color-principal-logo: var(--color-accent-primary);
+  --color-primary-logo: var(--color-accent-primary);
   --color-secundario-logo: #E0E0E0;
 }
 
