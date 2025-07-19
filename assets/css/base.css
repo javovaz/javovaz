@@ -23,7 +23,7 @@ button {
 /* Textos */
 p {
   font-size: var(--font-size-default);
-  line-height: 3rem;
+  line-height: var(--line-height-xxl);
 }
 
 h1, .h1 {
@@ -31,7 +31,7 @@ h1, .h1 {
   font-size: var(--font-size-h1);
   font-weight: 900;
   letter-spacing: 0.07rem;
-  line-height: 6rem;
+  line-height: var(--line-height-xxxl);
   margin: 3rem 0;
   display: block;
 }
@@ -41,7 +41,7 @@ h2, .h2 {
   font-size: var(--font-size-h2);
   font-weight: 900;
   letter-spacing: 0.07rem;
-  line-height: 6rem;
+  line-height: var(--line-height-xxxl);
   margin: 3rem 0;
   display: block;
 }
@@ -52,6 +52,8 @@ sup, sub {
 
 @media (min-width: 600px) {
   h1, .h1 {
-    line-height: 6rem;
+    font-size: 6rem;
+    line-height: var(--line-height-huge);
   }
+
 }

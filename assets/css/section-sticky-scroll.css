@@ -82,7 +82,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 13rem;
-  padding: 0 4rem;
+  padding: 0 1rem; /* 0 4rem */
 }
 
 .JVVZ__sticky-scroll .blockquote {

@@ -8,7 +8,6 @@
 }
 
 .timeline h1,
-.timeline h2,
 .timeline h3,
 .timeline h4,
 .timeline h5,
@@ -75,6 +74,11 @@
 .timeline-content {
   padding-bottom: 40px;
 }
+
+.timeline-title h2 {
+  background-color: aquamarine;
+}
+
 .timeline-content p:last-child {
   margin-bottom: 0;
 }

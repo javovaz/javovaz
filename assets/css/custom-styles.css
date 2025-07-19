@@ -311,12 +311,12 @@ svg #wheel {
 
 :root {
   --color-primary-logo: var(--color-accent-primary);
-  --color-secundario-logo: #1E1E1E;
+  --color-secondary-logo: #1E1E1E;
 }
 
 .dark-mode {
   --color-primary-logo: var(--color-accent-primary);
-  --color-secundario-logo: #E0E0E0;
+  --color-secondary-logo: #E0E0E0;
 }
 
 /** ROTATING LINK **/
