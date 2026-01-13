@@ -1,0 +1,47 @@
+# =========================
+# OS / System
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Temporary / Cache
+# =========================
+.cache/
+.tmp/
+
+# =========================
+# Node / Build tools (futuro-proof)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+dist/
+build/
+out/
+
+# =========================
+# GitHub Pages / Jekyll
+# =========================
+.jekyll-cache/
