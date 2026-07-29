@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Gus Vaz | Blog</title>
+  <link>https://javovaz.com.ar</link>
+  <description>Comunicar es mi profesión. El arte y la tecnología son el medio.</description>
+  <language>es-ar</language>
+  <atom:link href="https://javovaz.com.ar/feed.xml" rel="self" type="application/rss+xml" />
+  <lastBuildDate>Tue, 28 Jul 2026 22:11:55 -0300</lastBuildDate>
+  <image>
+    <url>https://javovaz.com.ar/apple-touch-icon.png</url>
+    <title>Gus Vaz | Blog</title>
+    <link>https://javovaz.com.ar</link>
+  </image>
+
+  <item>
+    <title><![CDATA[Volví en forma de fichas]]></title>
+    <link>https://javovaz.com.ar/blog/volvi-en-forma-de-fichas.html</link>
+    <guid isPermaLink="true">https://javovaz.com.ar/blog/volvi-en-forma-de-fichas.html</guid>
+    <pubDate>Tue, 28 Jul 2026 22:11:55 -0300</pubDate>
+    <enclosure url="https://javovaz.com.ar/blog/assets/images/volvi-en-forma-de-fichas.webp" length="0" type="image/webp" />
+    <category>Hola mundo</category>
+    <description><![CDATA[Arte, diseño, desarrollo e ideas incómodas. Si disfrutás cuestionar lo que parecía obvio, nos vamos a llevar bien.]]></description>
+  </item>
+
+  <item>
+    <title><![CDATA[Mr. Centennial o: Cómo aprendí a usar RSS feed y amar la web]]></title>
+    <link>https://javovaz.com.ar/blog/mr-centennial-o-como-aprendi-a-usar-rss-feed-y-amar-la-web.html</link>
+    <guid isPermaLink="true">https://javovaz.com.ar/blog/mr-centennial-o-como-aprendi-a-usar-rss-feed-y-amar-la-web.html</guid>
+    <pubDate>Tue, 28 Jul 2026 22:34:18 -0300</pubDate>
+    <enclosure url="https://javovaz.com.ar/blog/assets/images/mr-centennial-rss-feed.png" length="0" type="image/webp" />
+    <category>Hola mundo</category>
+    <category>RSS feed</category>
+    <description><![CDATA[Una guía rápida y sin vueltas para dominar el RSS feed en dos minutos y recuperar el control de tu contenido.]]></description>
+  </item>
+
+</channel>
+</rss>
