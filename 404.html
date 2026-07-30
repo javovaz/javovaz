@@ -21,26 +21,23 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gus Vaz | Blog</title>
 
-  <meta name="description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <title>Gus Vaz | Arte y Comunicación</title>
 
-  <meta property="og:title" content="Gus Vaz | Comunicación digital" />
-  <meta property="og:description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <meta name="description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+
+  <meta property="og:title" content="Gus Vaz | Arte y Comunicación" />
+  <meta property="og:description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta property="og:image" content="https://javovaz.com.ar/OG__image.jpg" />
   <meta property="og:url" content="https://javovaz.com.ar/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gus Vaz | Comunicación digital" />
-  <meta name="twitter:description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <meta name="twitter:title" content="Gus Vaz | Arte y Comunicación" />
+  <meta name="twitter:description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta name="twitter:image" content="https://javovaz.com.ar/OG__image.jpg" />
 
-  <link rel="stylesheet" href="assets/css/blog.css">
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
 
   <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
@@ -48,16 +45,57 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://javovaz.com.ar/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://javovaz.com.ar/favicon-16x16.png">
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="theme-color" content="#1a1a1a" />
   <link rel="manifest" href="/manifest.json" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+
+      "name": "Gustavo Vaz",
+      "alternateName": "Javo Vaz",
+      "url": "https://javovaz.com.ar",
+      "image": "https://javovaz.com.ar/assets/images/gustavo.vaz.webp",
+
+      "jobTitle": "Comunicador creativo",
+      "description": "Espacio personal y exploración sobre arte, diseño, desarrollo web, usabilidad y comunicación.",
+
+      "sameAs": [
+        "https://www.linkedin.com/in/javovaz",
+        "https://github.com/javovaz"
+      ],
+
+      "worksFor": {
+        "@type": "Organization",
+        "name": "estudioHYG"
+      },
+
+      "knowsAbout": [
+        "UX Design",
+        "Frontend Development",
+        "Accesibilidad Web",
+        "Experimentación Digital",
+        "Comunicación Visual",
+        "Desarrollo Web",
+        "Procesos Creativos"
+      ],
+
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mar del Plata",
+        "addressCountry": "Argentina"
+      }
+    }
+  </script>
 </head>
 
-<body class="blog-archive light-mode">
-  <nav class="navbar" aria-label="Navegación principal">
+<body class="light-mode">
+  <nav class="navbar">
     <div class="container">
-      <a href="../index.html" class="navbar-logo" aria-label="Home - Gus Vaz">
+      <a href="./index.html" class="navbar-logo" aria-label="Home">
         <svg role="img" aria-label="Logo de Javovaz" class="profile-logo" viewBox="0 0 510 151" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -94,14 +132,14 @@
         </svg>
       </a>
 
-      <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" class="hamburger">
+      <button id="menu-toggle" aria-label="Abrir menú" class="hamburger">
         <span></span><span></span><span></span>
       </button>
 
       <div class="nav-links" id="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="/blog/index.html" aria-current="page">Blog</a>
-        <a href="../contacto.html">Contacto</a>
+        <a href="./index.html">Home</a>
+        <a href="./blog/index.html">Blog</a>
+        <a href="./contacto.html">Contacto</a>
         <a id="translate-btn" href="https://translate.google.com/translate?sl=es&tl=auto&u=https://javovaz.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
           <svg aria-hidden="true" width="45" height="45" viewBox="0 0 45 45" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +152,7 @@
           </svg>
         </a>
       </div>
-      <button id="theme-toggle" aria-label="Cambiar tema de la página">
+      <button id="theme-toggle" aria-label="Activar modo oscuro">
         <svg aria-hidden="true" id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
           height="24" fill="var(--text)">
           <circle cx="12" cy="12" r="5" />
@@ -137,34 +175,17 @@
     </div>
   </nav>
 
-  <main>
-    <h1>Archivo de entradas</h1>
-    <div class="blog-controls">
-      <div class="search-wrapper">
-        <label for="search-input">Filtrar por palabra clave</label>
-        <input id="search-input" type="search" placeholder="Buscar posts...">
-      </div>
-      <div class="custom-sort-container">
-        <span id="sort-heading" class="sort-title">Ordenar por:</span>
-        <button type="button" class="sort-trigger" id="sort-trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="sort-heading sort-label">
-          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sort-icon">
-            <path d="M11 5h10M11 9h7M11 13h4M3 17l3 3 3-3M6 18V4" />
-          </svg>
-          <span id="sort-label">Más recientes</span>
-        </button>
-        <ul class="sort-menu" id="sort-menu" role="listbox" aria-labelledby="sort-heading">
-          <li data-value="recent" class="selected" role="option" aria-selected="true">Más recientes</li>
-          <li data-value="old" role="option" aria-selected="false">Más antiguos</li>
-        </ul>
-      </div>
-    </div>
-    
-    <h2>Filtrar por tema preferido</h2>
-    <section id="category-filter" class="category-filter" aria-label="Categorías del blog"></section>
-    <section id="archive-list" class="archive-grid" aria-label="Publicaciones"></section>
-    <nav id="pagination" class="pagination-controls" aria-label="Navegación de páginas"></nav>
-  </main>
+<main class="container">
+  <h1>Enjoy The Silence, llegaste a un 404</h1>
+  
+  <div id="mensaje-404">
+    Dicen que el que busca encuentra, pero parece que llegaste antes. Esta página aún no existe.
+  </div>
+  
+  <p>
+    Hasta que escriba ese posteo, podés volver a la <a href="/" class="btn-link">Home</a> o darte una vuelta por el <a href="/blog/index.html" class="btn-link">Blog</a>. Seguro encontrás algo que te interese mientras tanto.
+  </p>
+</main>
 
   <footer>
     <p><span aria-hidden="true">©</span> <span data-current-year=""></span> Gus Vaz</p>
@@ -204,16 +225,33 @@
     </svg>
   </footer>
 
-  <script type="module" src="../assets/js/theme.js"></script>
-  <script type="module" src="assets/js/blog.js"></script>
+  <script type="module" src="./assets/js/theme.js"></script>
 
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
-      });
+      navigator.serviceWorker.register('/sw.js');
     }
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const path = window.location.pathname;
+      let busqueda = path.split('/').filter(Boolean).pop() || '';
+
+      if (busqueda) {
+        busqueda = decodeURIComponent(busqueda) 
+          .replace(/\.[^/.]+$/, "")
+          .replace(/[-_]/g, " ")
+          .replace(/\b\w/g, l => l.toUpperCase())
+          .trim();
+
+        const contenedor = document.getElementById("mensaje-404");
+        
+        contenedor.innerHTML = `<p class="tight">Dicen que el que busca encuentra, pero parece que llegaste antes.</p><p>Esta página aún no existe.</p><p class="tight">Todavía no escribí nada sobre <strong>"${busqueda}"</strong>.</p><p>Si te interesa ese tema, <a href="/contacto.html">escribime</a>. Así el próximo artículo nace gracias a vos.</p>`;
+      }
+    });
+  </script>
+
 </body>
 
 </html>
