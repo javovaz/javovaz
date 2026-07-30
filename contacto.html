@@ -39,7 +39,6 @@
   <meta name="twitter:image" content="https://javovaz.com.ar/OG__image.jpg" />
 
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/blog.css">
   <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
 
   <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
@@ -445,9 +444,6 @@
   </footer>
 
   <script type="module" src="../assets/js/theme.js"></script>
-  <script type="module" src="assets/js/related.js"></script>
-  <script type="module" src="assets/js/related-section.js"></script>
-  <script src="assets/js/share-post.js" defer></script>
 
   <script>
     document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
@@ -465,11 +461,7 @@
       const name = document.getElementById('name').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      const textTemplate = `
-        Hola Gus: Me contacto desde la web.
-        *Nombre:* ${name}
-        *Mensaje:* ${message}
-      `;
+      const textTemplate = `Hola Gus: Me contacto desde la web.\nSoy ${name}\n*Mi mensaje:* ${message}`;
 
       const encodedText = encodeURIComponent(textTemplate);
 
