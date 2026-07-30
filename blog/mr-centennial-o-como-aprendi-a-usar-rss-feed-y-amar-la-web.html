@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Centennial o: Cómo aprendí a usar RSS feed y amar la web</title>
+  <title>Mr. Centennial o: Cómo aprendí a usar RSS feed y amar la web | Gus Vaz</title>
   <meta name="description" content="Una guía rápida y sin vueltas para dominar el RSS feed en dos minutos y recuperar el control de tu contenido.">
 
   <meta property="og:title" content="Mr. Centennial o: Cómo aprendí a usar RSS feed y amar la web" />
@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="assets/css/blog.css">
   <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
 
-  <!-- favicon -->
   <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="https://javovaz.com.ar/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://javovaz.com.ar/favicon-32x32.png">
@@ -31,7 +30,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="theme-color" content="#1a1a1a" />
-  <link rel="manifest" href="../manifest.json" />
+  <link rel="manifest" href="/manifest.json" />
 
   <script type="application/ld+json">
 {
@@ -60,7 +59,6 @@
 <body class="light-mode">
   <nav class="navbar">
     <div class="container">
-      <!-- Logo -->
       <a href="../index.html" class="navbar-logo" aria-label="Inicio">
         <svg role="img" class="profile-logo" viewBox="0 0 510 151" fill="none" xmlns="http://www.w3.org/2000/svg">
           <title>Logo de Javovaz</title>
@@ -98,18 +96,15 @@
         </svg>
       </a>
 
-      <!-- Botón hamburguesa -->
       <button id="menu-toggle" aria-label="Abrir menú" class="hamburger">
         <span></span><span></span><span></span>
       </button>
 
-      <!-- Enlaces de navegación -->
       <div class="nav-links" id="nav-links">
         <a href="../index.html">Inicio</a>
         <a href="./index.html">Blog</a>
         <a href="../contacto.html">Contacto</a>
-        <!-- Botón de traducción -->
-        <a id="translate-btn" href="" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
+        <a id="translate-btn" href="https://translate.google.com/translate?sl=es&tl=auto&u=https://javovaz.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
           <svg aria-hidden="true" width="45" height="45" viewBox="0 0 45 45" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -121,7 +116,6 @@
           </svg>
         </a>
       </div>
-      <!-- Botón de tema -->
       <button id="theme-toggle" aria-label="Activar modo oscuro">
         <svg aria-hidden="true" id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
           height="24" fill="var(--text)">
@@ -145,14 +139,12 @@
     </div>
   </nav>
 
-  <!-- ! FIN NAVBAR -->
-
   <section class="breadcrumb" id="breadcrumb"></section>
 
   <article>
     <div id="post-date"></div>
     <picture>
-      <source srcset="assets/images/mr-centennial-rss-feed.png" type="image/webp">
+      <source srcset="assets/images/mr-centennial-rss-feed.webp" type="image/webp">
 
       <img class="post-image image-fluid" src="assets/images/mr-centennial-rss-feed.png"
         alt="Descripción clara del contenido de la imagen para SEO y accesibilidad" loading="lazy" decoding="async">
@@ -326,7 +318,6 @@
     </p>
   </article>
 
-  <!-- SHARE POST SECTION -->
   <section class="share-post">
     <h3>Compartí en tus redes</h3>
     <div id="share-buttons" class="social-links"></div>
@@ -369,7 +360,7 @@
   <section id="related-posts"></section>
 
   <footer>
-    <p><span>©</span> <span data-current-year="">2025</span> Gus Vaz</p>
+    <p><span aria-hidden="true">©</span> <span data-current-year=""></span> Gus Vaz</p>
     <svg class="logo-footer" width="170" height="50" viewBox="0 0 170 50" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -411,6 +402,13 @@
   <script type="module" src="assets/js/related-section.js"></script>
   <script src="assets/js/share-post.js" defer></script>
   <script async src="https://public.codepenassets.com/embed/index.js"></script>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+  
 </body>
 
 </html>

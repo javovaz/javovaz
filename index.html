@@ -2,8 +2,6 @@
 <html lang="es">
 
 <head>
-  <!-- GOOGLE -->
-  <!-- Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -24,34 +22,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Inicio</title>
+  <title>Gus Vaz | Arte y Comunicación</title>
 
-  <meta name="description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <meta name="description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
 
-  <meta property="og:title" content="Gus Vaz | Comunicación digital" />
-  <meta property="og:description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <meta property="og:title" content="Gus Vaz | Arte y Comunicación" />
+  <meta property="og:description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta property="og:image" content="https://javovaz.com.ar/OG__image.jpg" />
   <meta property="og:url" content="https://javovaz.com.ar/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gus Vaz | Comunicación digital" />
-  <meta name="twitter:description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <meta name="twitter:title" content="Gus Vaz | Arte y Comunicación" />
+  <meta name="twitter:description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta name="twitter:image" content="https://javovaz.com.ar/OG__image.jpg" />
 
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
-  
-  <!-- favicon -->
+
   <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="https://javovaz.com.ar/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://javovaz.com.ar/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://javovaz.com.ar/favicon-16x16.png">
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="theme-color" content="#1a1a1a" />
   <link rel="manifest" href="/manifest.json" />
@@ -101,7 +95,6 @@
 <body class="light-mode">
   <nav class="navbar">
     <div class="container">
-      <!-- Logo -->
       <a href="./index.html" class="navbar-logo" aria-label="Inicio">
         <svg role="img" aria-label="Logo de Javovaz" class="profile-logo" viewBox="0 0 510 151" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -139,18 +132,15 @@
         </svg>
       </a>
 
-      <!-- Botón hamburguesa -->
       <button id="menu-toggle" aria-label="Abrir menú" class="hamburger">
         <span></span><span></span><span></span>
       </button>
 
-      <!-- Enlaces de navegación -->
       <div class="nav-links" id="nav-links">
         <a href="./index.html">Inicio</a>
         <a href="./blog/index.html">Blog</a>
         <a href="./contacto.html">Contacto</a>
-        <!-- Botón de traducción -->
-        <a id="translate-btn" href="" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
+        <a id="translate-btn" href="https://translate.google.com/translate?sl=es&tl=auto&u=https://javovaz.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
           <svg aria-hidden="true" width="45" height="45" viewBox="0 0 45 45" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -162,7 +152,6 @@
           </svg>
         </a>
       </div>
-      <!-- Botón de tema -->
       <button id="theme-toggle" aria-label="Activar modo oscuro">
         <svg aria-hidden="true" id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
           height="24" fill="var(--text)">
@@ -185,8 +174,6 @@
       </button>
     </div>
   </nav>
-
-  <!-- ! FIN NAVBAR -->
 
   <main class="profile">
     <picture>
@@ -244,7 +231,7 @@
   </main>
 
   <footer>
-    <p><span>©</span> <span data-current-year=""></span> Gustavo Vaz</p>
+    <p><span aria-hidden="true">©</span> <span data-current-year=""></span> Gus Vaz</p>
     <svg role="img" aria-label="Logo de Javovaz" class="logo-footer" width="170" height="50" viewBox="0 0 170 50"
       fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -282,6 +269,12 @@
   </footer>
 
   <script type="module" src="./assets/js/theme.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 
 </body>
 

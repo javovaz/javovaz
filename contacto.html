@@ -2,8 +2,6 @@
 <html lang="es">
 
 <head>
-  <!-- GOOGLE -->
-  <!-- Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -23,14 +21,13 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
+  <title>Gus Vaz | Hablemos</title>
 
   <meta name="description"
     content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
 
-  <meta property="og:title" content="Gus Vaz | Comunicación digital" />
-  <meta property="og:description"
-    content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
+  <meta property="og:title" content="Gus Vaz | Hablemos" />
+  <meta property="og:description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta property="og:image" content="https://javovaz.com.ar/OG__image.jpg" />
   <meta property="og:url" content="https://javovaz.com.ar/" />
   <meta property="og:type" content="website" />
@@ -41,11 +38,10 @@
     content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta name="twitter:image" content="https://javovaz.com.ar/OG__image.jpg" />
 
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/blog.css">
   <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
 
-  <!-- favicon -->
   <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="https://javovaz.com.ar/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://javovaz.com.ar/favicon-32x32.png">
@@ -70,7 +66,6 @@
 <body class="light-mode">
   <nav class="navbar">
     <div class="container">
-      <!-- Logo -->
       <a href="./index.html" class="navbar-logo" aria-label="Inicio">
         <svg role="img" aria-label="Logo de Javovaz" class="profile-logo" viewBox="0 0 510 151" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -108,18 +103,15 @@
         </svg>
       </a>
 
-      <!-- Botón hamburguesa -->
       <button id="menu-toggle" aria-label="Abrir menú" class="hamburger">
         <span></span><span></span><span></span>
       </button>
 
-      <!-- Enlaces de navegación -->
       <div class="nav-links" id="nav-links">
         <a href="./index.html">Inicio</a>
         <a href="./blog/index.html">Blog</a>
         <a href="./contacto.html">Contacto</a>
-        <!-- Botón de traducción -->
-        <a id="translate-btn" href="" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
+        <a id="translate-btn" href="https://translate.google.com/translate?sl=es&tl=auto&u=https://javovaz.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
           <svg aria-hidden="true" width="45" height="45" viewBox="0 0 45 45" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -131,7 +123,6 @@
           </svg>
         </a>
       </div>
-      <!-- Botón de tema -->
       <button id="theme-toggle" aria-label="Activar modo oscuro">
         <svg aria-hidden="true" id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
           height="24" fill="var(--text)">
@@ -155,34 +146,27 @@
     </div>
   </nav>
 
-  <!-- ! FIN NAVBAR -->
-
   <section class="breadcrumb" id="breadcrumb"></section>
 
   <style>
-    /* --- Contenedor de la Sección de Contacto --- */
     .contact-section {
       max-width: 800px;
       margin: var(--space) auto;
       padding: var(--space);
     }
 
-    /* --- Estructura del Formulario (KISS & Clean) --- */
     .contact-form {
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
-      /* Separación consistente entre grupos */
     }
 
     .form-group {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      /* Espacio entre label e input */
     }
 
-    /* --- Etiquetas (Labels) con personalidad --- */
     .form-group label {
       font-size: 0.95rem;
       font-weight: 600;
@@ -190,7 +174,6 @@
       transition: color 0.2s ease;
     }
 
-    /* --- Campos de Entrada (Inputs y Textarea) --- */
     .contact-form input[type="text"],
     .contact-form input[type="email"],
     .contact-form input[type="tel"],
@@ -201,55 +184,42 @@
       font-size: 1rem;
       color: var(--text);
       background-color: var(--card-bg);
-      /* Se adapta a light/dark mode automáticamente */
       border: 1px solid var(--border);
       border-radius: 12px;
-      /* Un punto medio estético, no tan curvo como la card */
       box-shadow: inset 0 1px 2px var(--shadow);
       box-sizing: border-box;
       transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     }
 
-    /* Estilo del Placeholder (Conversacional y sutil) */
     .contact-form ::placeholder {
       color: var(--text-secondary);
       opacity: 0.6;
     }
 
-    /* Evita que el textarea rompa el layout horizontalmente */
     .contact-form textarea {
       resize: vertical;
       min-height: 120px;
     }
 
-    /* --- Estados de Foco (El toque UX/UI Lab) --- */
-    /* Cuando el usuario hace clic o hace foco en un campo */
     .contact-form input:focus,
     .contact-form textarea:focus {
       outline: none;
       border-color: var(--accent-color);
-      /* Violeta profundo en Light / Verde Lima en Dark */
       background-color: var(--bg);
-      /* Cambia sutilmente el fondo al enfocarse */
       box-shadow: 0 0 0 4px rgba(85, 18, 212, 0.15);
-      /* Efecto de brillo suave (glow) */
     }
 
-    /* En modo oscuro cambiamos el color del glow para que matchee con el Verde Lima */
     .dark-mode .contact-form input:focus,
     .dark-mode .contact-form textarea:focus {
       box-shadow: 0 0 0 4px rgba(182, 218, 35, 0.2);
     }
 
-    /* Cambio de color del label cuando su input está activo (Foco indirecto) */
     .form-group:focus-within label {
       color: var(--accent-color);
     }
 
-    /* --- Botón de Envío (Usa tus variables oficiales) --- */
     .btn-primary {
       align-self: flex-start;
-      /* El botón ocupa solo su contenido, no el 100% */
       padding: 0.85rem 2rem;
       font-family: inherit;
       font-size: 1rem;
@@ -257,12 +227,8 @@
       cursor: pointer;
       border: none;
       border-radius: var(--radius-btn);
-      /* Tus 40px oficiales */
-
-      /* Enfoque reverso: fondo oscuro en light, fondo claro en dark */
       background-color: var(--bg-CTA-reverse);
       color: var(--text-reverse);
-
       box-shadow: 0 4px 6px var(--shadow);
       transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease;
     }
@@ -270,17 +236,13 @@
     .btn-primary:hover {
       transform: translateY(-1px);
       background-color: var(--accent-color);
-      /* Se vuelve disruptivo al pasar el mouse */
       color: var(--bg-CTA-reverse);
-      /* Ajuste de contraste para el texto en hover */
     }
 
     .btn-primary:active {
       transform: translateY(1px);
     }
 
-    /** AGREGADO **/
-    /* --- Contenedor del campo telefónico con el '+' estético --- */
     .phone-input-wrapper {
       position: relative;
       display: flex;
@@ -294,43 +256,33 @@
       font-weight: 600;
       color: var(--text-secondary);
       user-select: none;
-      /* Evita que se seleccione al copiar */
     }
 
-    /* Desplazamos el texto del input de teléfono a la derecha para que no pise el '+' */
     .phone-input-wrapper input {
       padding-left: 2.2rem !important;
     }
 
-    /* --- Gestión de Mensajes de Error (Premium UI) --- */
     .error-message {
       display: none;
-      /* Oculto por defecto */
       font-size: 0.8rem;
       font-weight: 600;
       color: #ef4444;
-      /* Rojo sofisticado */
       margin-top: 0.4rem;
       padding-left: 0.25rem;
       transition: all 0.2s ease;
     }
 
-    /* LÓGICA DE DETECCIÓN: 
-   Si el campo es inválido (:invalid) Y el usuario ya dejó de escribir pero pasó por ahí (:user-invalid o :placeholder-shown) */
     .contact-form input:focus:invalid,
     .contact-form textarea:focus:invalid {
-      /* Mientras escribe mal, el borde avisa sutilmente */
       border-color: var(--accent-color);
     }
 
-    /* Cuando el usuario saca el foco y el campo quedó mal definitivamente */
     .contact-form input:not(:placeholder-shown):not(:focus):invalid,
     .contact-form textarea:not(:placeholder-shown):not(:focus):invalid {
       border-color: #ef4444;
       background-color: rgba(239, 68, 68, 0.02);
     }
 
-    /* Mostramos el span de error que está justo abajo del input inválido */
     .contact-form input:not(:placeholder-shown):not(:focus):invalid~.error-message,
     .contact-form textarea:not(:placeholder-shown):not(:focus):invalid~.error-message {
       display: block;
@@ -349,9 +301,6 @@
       }
     }
 
-    /** OTRO **/
-    /* Tus reglas anteriores se mantienen idénticas, solo sumamos esta para cuando le dan click al botón: */
-
     .form-submitted input:invalid~.error-message,
     .form-submitted textarea:invalid~.error-message {
       display: block;
@@ -364,7 +313,6 @@
       background-color: rgba(239, 68, 68, 0.02);
     }
 
-    /* --- Bloque de Éxito (Oculto por defecto) --- */
     .form-success-message {
       display: none;
       opacity: 0;
@@ -385,18 +333,14 @@
       line-height: 1.6;
     }
 
-    /* --- Clases de Estado (Activadas por JS) --- */
-    /* Oculta el formulario por completo */
     .contact-form.is-hidden {
       display: none !important;
     }
 
-    /* Muestra el mensaje de éxito */
     .form-success-message.is-visible {
       display: block;
     }
 
-    /* Animación sutil de entrada */
     @keyframes fadeInSuccess {
       from {
         opacity: 0;
@@ -463,7 +407,7 @@
   <div class="spacer-5"></div>
 
   <footer>
-    <p><span>©</span> <span data-current-year="">2025</span> Gus Vaz</p>
+    <p><span aria-hidden="true">©</span> <span data-current-year=""></span> Gus Vaz</p>
     <svg role="img" aria-label="Logo de Javovaz" class="logo-footer" width="170" height="50" viewBox="0 0 170 50"
       fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -512,32 +456,35 @@
       const form = e.target;
       const successMessage = document.getElementById('contact-success');
 
-      // Compuerta de validación
       if (!form.checkValidity()) {
         form.classList.add('form-submitted');
         return;
       }
 
-      // Datos del formulario
       const myPhoneNumber = "5492235777425";
       const name = document.getElementById('name').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      // Plantilla limpia sin email
-      const textTemplate = `¡Hola! Me contacto desde la web.
-*Nombre:* ${name}
-*Mensaje:* ${message}`;
+      const textTemplate = `
+        Hola Gus: Me contacto desde la web.
+        *Nombre:* ${name}
+        *Mensaje:* ${message}
+      `;
 
       const encodedText = encodeURIComponent(textTemplate);
 
-      // 1. Abrimos WhatsApp
       window.open(`https://wa.me/${myPhoneNumber}?text=${encodedText}`, '_blank');
 
-      // 2. Intercambio visual
       form.classList.add('is-hidden');
       successMessage.classList.add('is-visible');
       successMessage.removeAttribute('aria-hidden');
     });
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
   </script>
 </body>
 

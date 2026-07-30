@@ -2,8 +2,6 @@
 <html lang="es">
 
 <head>
-    <!-- GOOGLE -->
-    <!-- Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -23,12 +21,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SINGLE POST MASTER</title>
+    <title>SINGLE POST MASTER | Gus Vaz</title>
+
+    <!-- ! METAS -->
+
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
 
-    <!-- favicon -->
     <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="https://javovaz.com.ar/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://javovaz.com.ar/favicon-32x32.png">
@@ -37,7 +37,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#1a1a1a" />
-    <link rel="manifest" href="../manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- ! LD+JSON -->
 
@@ -46,7 +46,6 @@
 <body class="light-mode">
     <nav class="navbar">
         <div class="container">
-            <!-- Logo -->
             <a href="../index.html" class="navbar-logo" aria-label="Inicio">
                 <svg role="img" aria-label="Logo de Javovaz" class="profile-logo" viewBox="0 0 510 151" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -84,18 +83,16 @@
                 </svg>
             </a>
 
-            <!-- Botón hamburguesa -->
             <button id="menu-toggle" aria-label="Abrir menú" class="hamburger">
                 <span></span><span></span><span></span>
             </button>
 
-            <!-- Enlaces de navegación -->
             <div class="nav-links" id="nav-links">
                 <a href="../index.html">Inicio</a>
                 <a href="./index.html">Blog</a>
                 <a href="../contacto.html">Contacto</a>
-                <!-- Botón de traducción -->
-                <a id="translate-btn" href="" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
+
+                <a id="translate-btn" href="https://translate.google.com/translate?sl=es&tl=auto&u=https://javovaz.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Traducir página">
                     <svg aria-hidden="true" width="45" height="45" viewBox="0 0 45 45" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -107,7 +104,7 @@
                     </svg>
                 </a>
             </div>
-            <!-- Botón de tema -->
+
             <button id="theme-toggle" aria-label="Activar modo oscuro">
                 <svg aria-hidden="true" id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                     height="24" fill="var(--text)">
@@ -131,8 +128,6 @@
         </div>
     </nav>
 
-    <!-- ! FIN NAVBAR -->
-
     <section class="breadcrumb" id="breadcrumb"></section>
 
     <article>
@@ -142,8 +137,8 @@
 
             <source media="(min-width: 769px)" srcset="https://picsum.photos/id/1011/800/400" type="image/webp">
 
-            <img class="post-image image-fluid" src="blog/assets/images/post1-fallback.jpg"
-                alt="Descripción clara del contenido de la imagen para SEO y accesibilidad" loading="eager"
+            <img class="post-image image-fluid" src="/blog/assets/images/blog-share-default.jpg"
+                alt="..." loading="eager"
                 fetchpriority="high">
         </picture>
 
@@ -191,7 +186,6 @@
         <div>
             <h2 class="indented-pill">CSS Grid Auto-Fit Laboratory</h2>
 
-            <!-- SECCIÓN COLS-2 -->
             <h2>Sección: Cards .cols-2</h2>
             <div class="grid cols-2">
                 <div class="card">
@@ -211,7 +205,7 @@
                 <picture>
                     <source srcset="https://picsum.photos/id/1011/800/400" type="image/webp">
 
-                    <img class="post-image image-fluid" src="blog/assets/images/post1-fallback.jpg"
+                    <img class="post-image image-fluid" src="/blog/assets/images/blog-share-default.jpg"
                         alt="Descripción clara del contenido de la imagen para SEO y accesibilidad" loading="lazy"
                         decoding="async">
                 </picture>
@@ -222,7 +216,6 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN COLS-3 -->
             <h2>Sección: .cols-3</h2>
             <div class="grid cols-3">
                 <div class="card">
@@ -242,7 +235,6 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN COLS-4 -->
             <h2>Sección: .cols-4</h2>
             <div class="grid cols-4">
                 <div class="card">
@@ -269,7 +261,6 @@
 
         </div>
 
-        <!-- SECCIÓN HERO CARD -->
         <h2>Sección: Hero card</h2>
         <section class="hero-card">
             <h3>Propuesta de Valor</h3>
@@ -277,7 +268,6 @@
             <span class="card-meta">UX/UI</span>
         </section>
 
-        <!-- SECCIÓN CODEPEN IFRAME -->
         <h2>Sección: Codepen iframe</h2>
 
         <iframe height="400" style="width: 100%; border-radius: var(--radius-image)" scrolling="no" title="Pen example"
@@ -293,7 +283,6 @@
                 on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
 
-        <!-- SECCIÓN YOUTUBE IFRAME -->
         <h2>Sección: Youtube iframe</h2>
         <section class="youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/XH1G58QqPIM?si=Pn9NnC4TCuNLpUvt"
@@ -303,7 +292,6 @@
             </iframe>
         </section>
 
-        <!-- SECCIÓN CUSTOM VIDEO -->
         <h2>Sección: Custom video</h2>
         <video controls width="100%" poster="assets/images/video16-9.png">
             <source src="assets/videos/video-test.mp4" type="video/mp4">
@@ -311,7 +299,6 @@
             Tu navegador no soporta el formato de video.
         </video>
 
-        <!-- SECCIÓN GOOGLE MAPS IFRAME -->
         <h2>Sección: Google maps iframe</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d-57.542!3d-38.005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1234567890"
@@ -319,7 +306,6 @@
             loading="lazy">
         </iframe>
 
-        <!-- SECCIÓN PRE CODE IFRAME -->
         <h2>Sección: Pre code</h2>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
@@ -344,7 +330,6 @@
 
     </article>
 
-    <!-- SHARE POST SECTION -->
     <section class="share-post">
         <h3 class="indented-pill">Compartí en tus redes</h3>
         <div id="share-buttons" class="social-links"></div>
@@ -388,7 +373,7 @@
     <section id="related-posts"></section>
 
     <footer>
-        <p><span>©</span> <span data-current-year=""></span> Gustavo Vaz</p>
+        <p><span aria-hidden="true">©</span> <span data-current-year=""></span> Gus Vaz</p>
         <svg role="img" aria-label="Logo de Javovaz" class="logo-footer" width="170" height="50" viewBox="0 0 170 50"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -429,8 +414,13 @@
     <script type="module" src="assets/js/related.js"></script>
     <script type="module" src="assets/js/related-section.js"></script>
     <script src="assets/js/share-post.js" defer></script>
-    <!-- !SOLO SI HAY UN EMBED DE CODEPEN -->
     <script async src="https://public.codepenassets.com/embed/index.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+
 </body>
 
 </html>
