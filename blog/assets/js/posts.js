@@ -1,5 +1,19 @@
 export const posts = [
 {
+  "id": 1785622186277,
+  "title": "No sé lo que quiero, pero lo quiero IA",
+  "slug": "no-se-lo-que-quiero-pero-lo-quiero-ia",
+  "date": "2026-08-01",
+  "excerpt": "El riesgo de delegar decisiones y confiar ciegamente en el criterio de la IA.",
+  "image": "https://javovaz.com.ar/blog/assets/images/no-se-lo-que-quiero-pero-lo-quiero-ia.webp",
+  "categories": [
+    "Proceso",
+    "Creatividad",
+    "Criterio"
+  ],
+  "link": "no-se-lo-que-quiero-pero-lo-quiero-ia.html"
+},
+{
   "id": 1785287515573,
   "title": "Volví en forma de fichas",
   "slug": "volvi-en-forma-de-fichas",
