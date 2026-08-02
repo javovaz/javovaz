@@ -5,7 +5,7 @@ export const posts = [
   "slug": "no-se-lo-que-quiero-pero-lo-quiero-ia",
   "date": "2026-08-01",
   "excerpt": "El riesgo de delegar decisiones y confiar ciegamente en el criterio de la IA.",
-  "image": "https://javovaz.com.ar/blog/assets/images/no-se-lo-que-quiero-pero-lo-quiero-ia.webp",
+  "image": "https://javovaz.com.ar/blog/assets/images/no-se-lo-que-quiero-pero-lo-quiero-ia.png",
   "categories": [
     "Proceso",
     "Creatividad",
@@ -19,7 +19,7 @@ export const posts = [
   "slug": "volvi-en-forma-de-fichas",
   "date": "2026-07-28",
   "excerpt": "Arte, diseño, desarrollo e ideas incómodas. Si disfrutás cuestionar lo que parecía obvio, nos vamos a llevar bien.",
-  "image": "https://javovaz.com.ar/blog/assets/images/volvi-en-forma-de-fichas.webp",
+  "image": "https://javovaz.com.ar/blog/assets/images/volvi-en-forma-de-fichas.png",
   "categories": [
     "Hola mundo"
   ],
