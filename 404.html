@@ -37,7 +37,7 @@
   <meta name="twitter:description" content="Comunicar es mi profesión. El arte y la tecnología son el medio." />
   <meta name="twitter:image" content="https://javovaz.com.ar/OG__image.jpg" />
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="alternate" type="application/rss+xml" title="Feed RSS" href="https://javovaz.com.ar/feed.xml" />
 
   <link rel="shortcut icon" href="https://javovaz.com.ar/favicon.ico" type="image/x-icon">
@@ -236,10 +236,21 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const path = window.location.pathname;
-      let busqueda = path.split('/').filter(Boolean).pop() || '';
+      
+      const segmentos = path.split('/').filter(Boolean);
+      
+      const ignorar = ['blog', 'assets', 'images', 'audios', 'videos', 'css', 'js'];
+      
+      let ultimoSegmento = '';
+      for (let i = segmentos.length - 1; i >= 0; i--) {
+        if (!ignorar.includes(segmentos[i].toLowerCase())) {
+          ultimoSegmento = segmentos[i];
+          break;
+        }
+      }
 
-      if (busqueda) {
-        busqueda = decodeURIComponent(busqueda) 
+      if (ultimoSegmento) {
+        let busqueda = decodeURIComponent(ultimoSegmento)
           .replace(/\.[^/.]+$/, "")
           .replace(/[-_]/g, " ")
           .replace(/\b\w/g, l => l.toUpperCase())
@@ -247,7 +258,9 @@
 
         const contenedor = document.getElementById("mensaje-404");
         
-        contenedor.innerHTML = `<p class="tight">Dicen que el que busca encuentra, pero parece que llegaste antes.</p><p>Esta página aún no existe.</p><p class="tight">Todavía no escribí nada sobre <strong>"${busqueda}"</strong>.</p><p>Si te interesa ese tema, <a href="/contacto.html">escribime</a>. Así el próximo artículo nace gracias a vos.</p>`;
+        if (contenedor) {
+          contenedor.innerHTML = `<p class="tight">Dicen que el que busca encuentra, pero parece que llegaste antes.</p><p>Esta página aún no existe.</p><p class="tight">Todavía no escribí nada sobre <strong>"${busqueda}"</strong>.</p><p>Si te interesa ese tema, <a href="/contacto.html">escribime</a>. Así el próximo artículo nace gracias a vos.</p>`;
+        }
       }
     });
   </script>
